@@ -36,7 +36,7 @@ export default function Home() {
         <li><Link href="/#menu" className="hover:text-amber-900 transition">Menu</Link></li>
         <li><Link href="/#about" className="hover:text-amber-900 transition">About Us</Link></li>
         <li><Link href="/#promo" className="hover:text-amber-900 transition">Promo</Link></li>
-        <li><Link href="/#login" className="hover:text-amber-900 transition p-[18%] pl-[40%] pr-[40%] rounded-[10%] border-none bg-main-expreso-p4 text-white">Login</Link></li>
+        <li><Link href="/login" className="hover:text-amber-900 transition p-[18%] pl-[40%] pr-[40%] rounded-[10%] border-none bg-main-expreso-p4 text-white">Login</Link></li>
       </ul>
     </nav>
 
