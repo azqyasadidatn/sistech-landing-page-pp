@@ -1,26 +1,50 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --netral: #ffffff;
+  --netral2: #171717;
+}
+
+@theme {
+    /* ================= MAIN COLOR (Espresso Browns) ================= */
+  --color-main-expreso-p4: #a38a75; /* Paling Terang (Latte) */
+  --color-main-expreso-p2: #70533e;
+  --color-main-expreso: #542c0e; /* BASE MAIN COLOR */
+  --color-main-expreso-b2: #3b1d07;
+  --color-main-expreso-b4: #211003; /* Paling Gelap */
+
+  /* ================= SECOND COLOR (Warm Oranges) ================= */
+  --color-second-orange-p4: #ffc499;
+  --color-second-orange-p2: #ffa366;
+  --color-second-orange: #ff914d; /* BASE SECOND COLOR */
+  --color-second-orange-b2: #cc7033;
+  --color-second-orange-b4: #995020;
+
+  /* ================= ACCENT COLOR (Fresh Teals) ================= */
+  --color-accent-Teals-p4: #d1f7ff;
+  --color-accent-Teals-p2: #b3f0fc;
+  --color-accent-Teals: #94e8f7; /* BASE ACCENT COLOR */
+  --color-accent-Teals-b2: #7cb0bd;
+  --color-accent-Teals-b4: #5b808a;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background: var(--netral);
+  --color-foreground: var(--netral2);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --netral2: #0a0a0a;
+    --netral: #ededed;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--netral2);
+  color: var(--netral);
   font-family: Arial, Helvetica, sans-serif;
 }
