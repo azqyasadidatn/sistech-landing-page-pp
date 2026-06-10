@@ -1,9 +1,10 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 export default function Home() {
   const [activeCategory, setActiveCategory] = useState("kopi");
 
-  // 2. DATA DAFTAR MENU LENGKAP KAFE NAWASENA
+  // 2. DATA DAFTAR MENU LENGKAP KAFE 
   const menuData = {
     kopi: [
       { name: "Espresso", price: "Rp 22.000", desc: "Double shot espresso murni pilihan. Pas untuk memicu konsentrasi penuh saat nugas.", icon: "☕", tag: "Must Try" },
@@ -32,10 +33,10 @@ export default function Home() {
     <nav className="w-full bg-white border-b border-stone-200 px-6 py-6 flex justify-between items-center sticky top-0 z-50">
       <span className="font-serif font-bold text-main-expreso text-lg">Sistech Caffe</span>
       <ul className="flex space-x-6 text-m font-medium text-stone-600 mr-[3%]">
-        <li><a href="#" className="hover:text-amber-900 transition">Menu</a></li>
-        <li><a href="#" className="hover:text-amber-900 transition">About Us</a></li>
-        <li><a href="#" className="hover:text-amber-900 transition">Promo</a></li>
-        <li><a href="#" className="hover:text-amber-900 transition p-[18%] pl-[40%] pr-[40%] rounded-[10%] border-none bg-main-expreso-p4 text-white">Login</a></li>
+        <li><Link href="/#menu" className="hover:text-amber-900 transition">Menu</Link></li>
+        <li><Link href="/#about" className="hover:text-amber-900 transition">About Us</Link></li>
+        <li><Link href="/#promo" className="hover:text-amber-900 transition">Promo</Link></li>
+        <li><Link href="/#login" className="hover:text-amber-900 transition p-[18%] pl-[40%] pr-[40%] rounded-[10%] border-none bg-main-expreso-p4 text-white">Login</Link></li>
       </ul>
     </nav>
 
@@ -52,10 +53,10 @@ export default function Home() {
                 className="h-full w-full rounded-2xl"
                 />
                 <div className="teks absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black/50 to-transparent rounded-2xl">
-                  <span className="absolute bottom-[25%] left-4 text-2xl md:text-3xl font-bold text-second-orange-p4">
+                  <span className="absolute bottom-[25%] left-4 text-lg sm:text-2xl md:text-3xl md:text-3xl font-bold text-second-orange-p4">
                     Best Menu
                   </span>
-                  <p className="absolute bottom-3 left-0 md:text-xs uppercase tracking-widest text-white font-bold pl-4 mt-1">
+                  <p className="absolute bottom-[15%] left-0 text-[9px] sm:text-xs md:text-sm uppercase tracking-widest text-white font-bold pl-4">
                     Koleksi Kopi Eksklusif
                   </p>
                 </div>
@@ -68,10 +69,10 @@ export default function Home() {
                 className="h-full w-full rounded-2xl"
                 />
                 <div className="teks absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black/50 to-transparent rounded-2xl">
-                  <span className="absolute bottom-[25%] left-4 text-2xl md:text-3xl font-bold text-second-orange-p4">
+                  <span className="absolute bottom-[25%] left-4 text-lg sm:text-2xl md:text-3xl font-bold text-second-orange-p4">
                     Eksklusif
                   </span>
-                  <p className="absolute bottom-3 left-0 md:text-xs uppercase tracking-widest text-white font-bold pl-4 mt-1">
+                  <p className="absolute bottom-[15%] left-0 text-[9px] sm:text-xs md:text-sm uppercase tracking-widest text-white font-bold pl-4 mt-1">
                     Koleksi Novel dan Komik
                   </p>
                 </div>
@@ -84,10 +85,10 @@ export default function Home() {
                 className="h-full w-full rounded-2xl"
                 />
                 <div className="teks absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black/50 to-transparent rounded-2xl">
-                  <span className="absolute bottom-[25%] left-4 text-2xl md:text-3xl font-bold text-second-orange-p4">
+                  <span className="absolute bottom-[25%] left-4 text-lg sm:text-2xl md:text-3xl font-bold text-second-orange-p4">
                     Free Wi-Fi
                   </span>
-                  <p className="absolute bottom-3 left-0 md:text-xs uppercase tracking-widest text-white font-bold pl-4 mt-1">
+                  <p className="absolute bottom-[15%] left-0 text-[9px] sm:text-xs md:text-sm uppercase tracking-widest text-white font-bold pl-4 mt-1">
                     Jaringan Cepat 24 Jam
                   </p>
                 </div>
@@ -105,7 +106,7 @@ export default function Home() {
           </img>
           <div className="absolute w-[45%] inset-0 bg-main-expreso-p4/20 border-2 border-main-expreso-p2/30 rounded-2xl -translate-x-4 -translate-y-4 z-0  m-[3%]"></div>
         </div>
-        <div className="flex flex-col justify-content mt-[7%] p-6 space-y-4">
+        <div id="about" className="flex flex-col justify-content mt-[7%] p-6 space-y-4">
             <span className="text-xs font-bold uppercase tracking-widest text-accent-teals-b2">
               About Us
             </span>
@@ -128,6 +129,7 @@ export default function Home() {
         <section className="py-16 px-6 max-w-6xl mx-auto w-full border-t border-main-expreso-p4/10 mt-[2%]">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 items-start text-center">
             <div className="flex flex-col items-center space-y-4 px-2">
+              
               <h3 className="font-serif font-bold text-main-expreso-b4 text-base tracking-wider uppercase">
                 Sertifikasi Halal
               </h3>
@@ -158,7 +160,7 @@ export default function Home() {
         </section>
       </section>
       
-      <section className="menu-section mt-[12%] mb-20 m-[5%]">
+      <section id="menu" className="menu-section mt-[12%] mb-20 m-[5%]">
           <h2 className="text-3xl font-serif font-bold text-center text-main-expreso-b2 block mb-2">
             Menu Sajian Terbaik Kami
           </h2>
@@ -287,6 +289,69 @@ export default function Home() {
             ))}
             </div>
 
+      </section>
+      <section id="promo" className="mt-[10%] scroll-mt-24 px-4">
+        <span className="text-2xl font-serif font-bold text-center text-main-expreso-b2 block mb-2">
+          Promo Spesial Bulan Ini
+        </span>
+        <p className="text-center text-xs md:text-sm text-accent-teals-b2 mb-10">
+          Nikmati penawaran terbatas khusus untuk menemani produktivitasmu.
+        </p>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto w-full">
+          <div className="relative bg-gradient-to-br from-[#1c110c] to-[#3a2218] rounded-2xl p-6 md:p-8 text-white overflow-hidden shadow-lg group">
+            <div className="absolute right-[-20px] bottom-[-20px] text-9xl opacity-10 pointer-events-none font-bold">
+              20%
+            </div>
+            <div className="relative z-10 flex flex-col justify-between h-full space-y-6">
+              <div>
+                <span className="bg-amber-900/50 border border-amber-700 text-second-orange-p4 text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-md">
+                  Khusus Mahasiswa
+                </span>
+                <h3 className="text-xl md:text-2xl font-serif font-bold mt-3">
+                  Promo Happy Hour Nugas
+                </h3>
+                <p className="text-stone-300 text-xs mt-2 max-w-sm leading-relaxed">
+                  Tunjukkan kartu mahasiswamu setiap hari Senin hingga Jumat pukul 13.00 - 16.00 dan dapatkan diskon langsung untuk semua varian kopi.
+                </p>
+              </div>
+              <div className="flex justify-between items-center pt-4 border-t border-stone-700">
+                <span className="text-xs text-stone-400">Berlaku s/d 30 Juni 2026</span>
+                <Link href="/order" className="px-4 py-2 bg-white text-[#1c110c] text-xs font-bold rounded-xl hover:bg-second-orange-p4 transition-all">
+                  Klaim Promo
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          <div className="relative bg-gradient-to-br from-[#fcfaf2] to-[#f4eee1] border border-main-expreso-p4/20 rounded-2xl p-6 md:p-8 text-main-expreso-b4 overflow-hidden shadow-sm group">
+            <div className="absolute right-[-10px] bottom-[-10px] text-9xl opacity-5 pointer-events-none font-bold">
+              ☕
+            </div>
+            <div className="relative z-10 flex flex-col justify-between h-full space-y-6">
+              <div>
+                <span className="bg-main-expreso-p4 text-white text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-md">
+                  Bundling Hemat
+                </span>
+                <h3 className="text-xl md:text-2xl font-serif font-bold mt-3">
+                  Paket Senja Literasi
+                </h3>
+                <p className="text-main-expreso-p2 text-xs mt-2 max-w-sm leading-relaxed">
+                  Dapatkan kombinasi sempurna 1 Kopi Susu Nawasena hangat dan 1 Croissant Senja renyah dengan harga yang jauh lebih hemat.
+                </p>
+              </div>
+              <div className="flex justify-between items-center pt-4 border-t border-main-expreso-p4/10">
+                <div className="flex items-center gap-2">
+                  <span className="line-through text-stone-400 text-xs">Rp 43.000</span>
+                  <span className="font-bold text-amber-900 text-base">Rp 35.000</span>
+                </div>
+                <Link href="/order" className="px-4 py-2 bg-[#1c110c] text-white text-xs font-bold rounded-xl hover:bg-amber-900 transition-all">
+                  Beli Paket
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
 

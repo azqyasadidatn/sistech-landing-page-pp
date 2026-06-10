@@ -21,11 +21,11 @@
   --color-second-orange-b4: #995020;
 
   /* ================= ACCENT COLOR (Fresh Teals) ================= */
-  --color-accent-Teals-p4: #d1f7ff;
-  --color-accent-Teals-p2: #b3f0fc;
-  --color-accent-Teals: #94e8f7; /* BASE ACCENT COLOR */
-  --color-accent-Teals-b2: #7cb0bd;
-  --color-accent-Teals-b4: #5b808a;
+  --color-accent-teals-p4: #d1f7ff;
+  --color-accent-teals-p2: #b3f0fc;
+  --color-accent-teals: #94e8f7; /* BASE ACCENT COLOR */
+  --color-accent-teals-b2: #7cb0bd;
+  --color-accent-teals-b4: #5b808a;
 }
 
 @theme inline {
