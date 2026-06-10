@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Nawasena - Kafe Impian",
+  title: "Sistech - Kafe Impian",
   description: "Project Landing Page SISTECH 2026 - Nawasena, Kafe Impian yang menyajikan kopi berkualitas tinggi dan suasana nyaman untuk semua pecinta kopi.",
 };
 
