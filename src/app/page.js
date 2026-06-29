@@ -359,7 +359,7 @@ export default function Home() {
         <div className="h-full w-full max-w-6xl mx-auto px-6 flex flex-col items-center gap-4">
           <div className="flex justify-between items-center gap-6">
             <a 
-            href= "#"
+            href= "https://www.instagram.com/sa.didatn/?hl=id"
             target="_blank"
             rel = "noopener noreferrer"
             className="text-main-expreso-p4 hover:text-second-orange transition-colors duration-300 text- font-medium"  
@@ -372,7 +372,7 @@ export default function Home() {
             </a>
 
             <a 
-            href= "#"
+            href= "https://github.com/azqyasadidatn"
             target="_blank"
             rel = "noopener noreferrer"
             className="text-main-expreso-p4 hover:text-second-orange transition-colors duration-300 text-sm font-medium"  
@@ -383,7 +383,7 @@ export default function Home() {
             </a>
 
             <a 
-            href= "#"
+            href= "https://www.linkedin.com/in/azqya-sadidatun-nisa-72991a341/"
             target="_blank"
             rel = "noopener noreferrer"
             className="text-main-expreso-p4 hover:text-second-orange transition-colors duration-300 text-sm font-medium"  
